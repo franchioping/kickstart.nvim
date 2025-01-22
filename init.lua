@@ -838,7 +838,7 @@ require('lazy').setup({
             group_index = 0,
           },
           { name = 'nvim_lsp' },
-          { name = 'luasnip', opts = { label_aliases = {
+          { name = 'luasnip', option = { label_aliases = {
             ['(?<!\\\\)(sec)'] = 'sec',
             ['(?<!\\\\)(sec*)'] = 'sec*',
           } } },
