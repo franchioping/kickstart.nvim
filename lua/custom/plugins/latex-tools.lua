@@ -8,9 +8,9 @@ return {
       -- VimTeX configuration goes here, e.g.
       vim.g.vimtex_view_method = 'zathura'
     end,
-    -- config = function()
-    --   vim.g.vimtex_indent_enabled = 0
-    -- end,
+    config = function()
+      vim.g.vimtex_compiler_latexmk = { ['out_dir'] = '/home/franchioping/Notes/build' }
+    end,
   },
   {
     'franchioping/luasnip-latex-snippets.nvim',
