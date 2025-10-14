@@ -18,4 +18,7 @@ return {
   --     vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
   --   end,
   -- },
+  {
+    'windwp/nvim-ts-autotag',
+  },
 }

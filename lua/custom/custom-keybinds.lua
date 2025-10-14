@@ -13,6 +13,8 @@
 -- vim.keymap.set('v', '<leader>/', 'gc', { remap = true })
 --
 
+vim.keymap.set({ 'x', 'n' }, '<leader>d', '"_d', { remap = false, desc = 'Delete without copying' })
+
 local operator_rhs = function()
   return require('vim._comment').operator()
 end
