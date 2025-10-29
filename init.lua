@@ -749,7 +749,7 @@ require('lazy').setup({
           return 'make install_jsregexp'
         end)(),
         config = function(_, _)
-          -- require('luasnip.loaders.from_lua').lazy_load { paths = './lua/luasnippets/' }
+          require('luasnip.loaders.from_lua').lazy_load { paths = './lua/luasnippets/' }
         end,
         dependencies = {
           -- `friendly-snippets` contains a variety of premade snippets.
@@ -846,10 +846,15 @@ require('lazy').setup({
             group_index = 0,
           },
           { name = 'nvim_lsp' },
-          { name = 'luasnip', option = { label_aliases = {
-            ['(?<!\\\\)(sec)'] = 'sec',
-            ['(?<!\\\\)(sec*)'] = 'sec*',
-          } } },
+          {
+            name = 'luasnip',
+            option = {
+              label_aliases = {
+                ['(?<!\\\\)(sec)'] = 'sec',
+                ['(?<!\\\\)(sec*)'] = 'sec*',
+              },
+            },
+          },
           { name = 'path' },
         },
       }
