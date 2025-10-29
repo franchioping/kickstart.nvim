@@ -88,7 +88,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.maplocalleader = ','
 
 vim.g.tex_flavor = 'latex'
 
@@ -158,7 +158,7 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
-vim.cmd 'set expandtab'
+-- vim.cmd 'set expandtab'
 
 vim.opt.smartindent = false
 
@@ -323,7 +323,7 @@ require('lazy').setup({
       spec = {
         { '<leader>f', group = 'Telescope Find' },
         { '<leader>c', group = 'Config Toggle' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>h', group = 'Help Errors', mode = { 'n', 'v' } },
       },
     },
   },
