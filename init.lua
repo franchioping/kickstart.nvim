@@ -764,8 +764,8 @@ require('lazy').setup({
         },
       },
       {
-        'franchioping/cmp_luasnip',
-        dev = true,
+        'saadparwaiz1/cmp_luasnip',
+        -- dev = true,
       },
       -- Adds other completion capabilities.
       --  nvim-cmp does not ship with all sources by default. They are split
@@ -849,10 +849,11 @@ require('lazy').setup({
           {
             name = 'luasnip',
             option = {
-              label_aliases = {
-                ['(?<!\\\\)(sec)'] = 'sec',
-                ['(?<!\\\\)(sec*)'] = 'sec*',
-              },
+              show_autosnippets = true,
+              -- label_aliases = {
+              --   ['(?<!\\\\)(sec)'] = 'sec',
+              --   ['(?<!\\\\)(sec*)'] = 'sec*',
+              -- },
             },
           },
           { name = 'path' },
